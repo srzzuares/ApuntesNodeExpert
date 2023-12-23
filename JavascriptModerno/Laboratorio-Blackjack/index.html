@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>Blackjack - SrZzuares</header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button id="btnNuevoJuego" class="btn btn-warning">Jugar de Nuevo</button>
+            <button id="btnPedirCarta" disabled="disabled" class="btn btn-info">Otra carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-info">Detener</button>
+        </div>
+    </div>
+
+    <div class="row jugWidth">
+        <div class="col">
+            <div class="col-auto">
+                <h2>Jugador 1 - <small>0</small></h2>
+                <div id="jugador-cartas" class="divCartas">
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="col-auto">
+                <h2>Computadora - <small>0</small></h2>
+                <div id="computadora-cartas" class="divCartas"> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/underscore-min.js"></script>
+    <script src="js/index-min.js"></script>
+</body>
+
+</html>
