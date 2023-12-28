@@ -1,5 +1,5 @@
 import { Todo } from "../todos/models/todo.model";
-const Filters = {
+export const Filters = {
     All: 'all',
     Completed: 'completed',
     Pending: 'pending'
@@ -102,5 +102,6 @@ export default {
     loadStore,
     setFilter,
     toggleTodo,
-    addTodo
+    addTodo,
+    Filters
 }
