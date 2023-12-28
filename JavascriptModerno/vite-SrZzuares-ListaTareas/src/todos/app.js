@@ -36,7 +36,6 @@ export const App = (elementId) => {
     const todoListUL = document.querySelector(elementIDs.TodoList);
     const clearCompletedBtn = document.querySelector(elementIDs.ClearCompleted);
     const todoFiltro = document.querySelectorAll(elementIDs.TodoFilters);
-    const pendingCountLabel = document.querySelectorAll(elementIDs.PendingCountLabel);
     //Listeners
     newDescriptionInput.addEventListener('keyup', (event) => {
         // console.log(event)
@@ -67,7 +66,8 @@ export const App = (elementId) => {
         element.addEventListener("click", element => {
             todoFiltro.forEach(el => el.classList.remove('selected'))
             element.target.classList.add('selected');
-            switch (element.target.text) {
+            // console.log(element.target.id);
+            switch (element.target.id) {
                 case 'Todos':
                     todoStore.setFilter(Filters.All);
                     break;
