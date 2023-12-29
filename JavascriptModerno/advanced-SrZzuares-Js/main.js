@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { enviromentsComponent } from './src/concepts/01-enviroment'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -12,7 +12,10 @@ document.querySelector('#app').innerHTML = `
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1>Hello Vite!</h1>
+    <div class="card"></div>
   </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+`
+// console.log(import.meta.env); //Para imprimir las variables de entorno u obtenerlas mediante Vite
+const element = document.querySelector('.card');
+enviromentsComponent(element);
