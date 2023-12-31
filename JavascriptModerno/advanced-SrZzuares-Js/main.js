@@ -2,6 +2,9 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { enviromentsComponent } from './src/concepts/01-enviroment'
+import { callbackComponent } from './src/concepts/02-callbacks'
+import { callbackComponent2 } from './src/concepts/03-callbackHell'
+
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -18,4 +21,6 @@ document.querySelector('#app').innerHTML = `
 `
 // console.log(import.meta.env); //Para imprimir las variables de entorno u obtenerlas mediante Vite
 const element = document.querySelector('.card');
-enviromentsComponent(element);
+// enviromentsComponent(element);
+// callbackComponent(element);
+callbackComponent2(element);
