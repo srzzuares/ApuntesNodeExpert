@@ -7,6 +7,9 @@ import { callbackComponent2 } from './src/concepts/03-callbackHell'
 import { promiseComponent } from './src/concepts/04-promises'
 import { promiseComponent2 } from './src/concepts/05-promisesHell'
 import { promiseRace } from './src/concepts/06-promiseRace'
+import { asyncComponent } from './src/concepts/07-async'
+import { asyncAwaitComponent } from './src/concepts/08-asyncAwait'
+import { asyncAwait2Component } from './src/concepts/09-asyncAwait2'
 
 
 document.querySelector('#app').innerHTML = `
@@ -26,4 +29,4 @@ document.querySelector('#app').innerHTML = `
 const element = document.querySelector('.card');
 // enviromentsComponent(element);
 // callbackComponent(element);
-promiseRace(element);
+asyncAwait2Component(element);
