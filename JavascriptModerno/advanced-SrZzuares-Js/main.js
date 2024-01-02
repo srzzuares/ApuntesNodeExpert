@@ -12,6 +12,7 @@ import { asyncAwaitComponent } from './src/concepts/08-asyncAwait'
 import { asyncAwait2Component } from './src/concepts/09-asyncAwait2'
 import { forAwaitComponent } from './src/concepts/10-forIfawait'
 import { GenerateFucComponent } from './src/concepts/11-funcioneGeneradoras'
+import { generatorsAsyncComponent } from './src/concepts/12-funcGeneradoraAsync'
 
 
 document.querySelector('#app').innerHTML = `
@@ -31,4 +32,4 @@ document.querySelector('#app').innerHTML = `
 const element = document.querySelector('.card');
 // enviromentsComponent(element);
 // callbackComponent(element);
-GenerateFucComponent(element);
+generatorsAsyncComponent(element);
