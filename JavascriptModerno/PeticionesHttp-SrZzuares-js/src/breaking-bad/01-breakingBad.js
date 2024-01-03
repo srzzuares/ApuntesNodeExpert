@@ -33,7 +33,12 @@ export const BreakingBad = (elementHtml) => {
 
     }
 
+    nextQuoteBtn.addEventListener('click', async () => {
+        elementHtml.innerHTML = 'Loading...';
+        await fetchQuote()
+            .then(renderQuote);
+    })
+
     fetchQuote()
         .then(renderQuote);
-
 }
