@@ -8,7 +8,11 @@ const state = {
 }
 
 const loadNextPage = async () => {
-    await loadUsers(1);
+    const arrayUsers = await loadUsers(state.currentPage + 1);
+    // console.log(arrayUsers)
+    if (arrayUsers === 0) return;
+    state.currentPage += 1;
+    state.users = arrayUsers;
 }
 
 const loadPreviousPage = async () => {
@@ -25,6 +29,6 @@ export default {
     onUserChange,
     reloadPage,
 
-    getUser: () => [...state.users],
+    getUsers: () => [...state.users],
     getCurrentPage: () => state.currentPage
 };
